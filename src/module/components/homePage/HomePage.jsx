@@ -86,7 +86,7 @@ export default function HomePage({
         }
       } catch (error) {
         console.error(error);
-        setCurrentPage("game");
+        // setCurrentPage("game");
         // setIsAttempted(true);
       }
     }
