@@ -1,0 +1,83 @@
+/* mobile view */
+.GameResult {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  padding: 8vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: flex-start;
+  .mainContainer {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #bf830f, #faca6e, #c58407) border-box;
+    border: 0.12vw solid transparent;
+    border-radius: 1vw;
+    width: 80%;
+    background-color: #fff;
+    padding: 5vw;
+    border-radius: 2vw;
+    gap: 3vw;
+    position: relative;
+    p {
+      color: #ff0000;
+    }
+    .closeBtn {
+      position: absolute;
+      top: 1.5vw;
+      right: 1.5vw;
+      cursor: pointer;
+      svg {
+        color: #42140e;
+        font-size: 4.5vw;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* tablet view */
+@media all and (min-width: 480px) {
+  .GameResult {
+    padding: 6vw;
+    .mainContainer {
+      width: 70%;
+      border: 0.1vw solid transparent;
+      padding: 5vw 3vw;
+      border-radius: 1.5vw;
+      gap: 2vw;
+      .closeBtn {
+        top: 1.2vw;
+        right: 1.2vw;
+        svg {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+}
+
+/*   react-icons => "4.11.0" */
+/* laptop view */
+@media all and (min-width: 991px) {
+  .GameResult {
+    padding: 4vw;
+    .mainContainer {
+      width: 30%;
+      border: 0.08vw solid transparent;
+      padding: 2vw;
+      border-radius: 0.5vw;
+      gap: 2vw;
+      .closeBtn {
+        top: 0.5vw;
+        right: 0.5vw;
+        svg {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}

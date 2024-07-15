@@ -1,0 +1,126 @@
+/* mobile view */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --themeColor1: #ffe7dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.imgTechkilla {
+  height: 100%;
+  width: 100%;
+}
+
+.h1Techkilla {
+  font-size: 6vw;
+  text-align: center;
+  color: #42140e;
+}
+
+.h2Techkilla {
+  font-size: 5vw;
+  color: #42140e;
+}
+
+.h3Techkilla {
+  font-size: 3.8vw;
+  color: #42140e;
+}
+
+.txt1 {
+  font-size: 4.5vw;
+  color: #42140e;
+}
+
+.txt2 {
+  font-size: 3.3vw;
+  text-align: center;
+  color: #42140e;
+}
+
+.smallTxt {
+  font-size: 2.7vw;
+}
+
+.liTechkilla {
+  list-style-type: none;
+  color: #42140e;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* tablet view */
+@media all and (min-width: 480px) {
+  .h1Techkilla {
+    font-size: 4vw;
+  }
+
+  .h2Techkilla {
+    font-size: 3vw;
+  }
+  .h3Techkilla {
+    font-size: 2.8vw;
+  }
+  .txt1 {
+    font-size: 3.2vw;
+  }
+
+  .txt2 {
+    font-size: 2.8vw;
+    text-align: center;
+  }
+
+  .smallTxt {
+    font-size: 2.1vw;
+  }
+}
+
+/* laptop view */
+@media all and (min-width: 991px) {
+  .h1Techkilla {
+    font-size: 2vw;
+  }
+  .h2Techkilla {
+    font-size: 1.5vw;
+  }
+  .h3Techkilla {
+    font-size: 1.2vw;
+  }
+  .txt1 {
+    font-size: 1.2vw;
+  }
+  .txt2 {
+    font-size: 1vw;
+  }
+  .smallTxt {
+    font-size: 0.8vw;
+  }
+}

@@ -1,0 +1,93 @@
+/* for mobile view */
+.GamePage {
+  padding: 0 0;
+  /*  background: linear-gradient(
+    var(--themeColor1),
+    #fff 20%,
+    #fff,
+    #fff,
+    #fff 90%,
+    var(--themeColor1)
+  ); */
+  background-color: #fff;
+
+  .header {
+    padding: 0 6vw;
+    width: 100%;
+    gap: 2vw;
+    justify-content: flex-start;
+    .name {
+      width: 100%;
+      font-style: italic;
+    }
+    .scoreTimeContainer {
+      width: 100%;
+      justify-content: space-between;
+      .score {
+      }
+      .time {
+        font-weight: 600;
+      }
+    }
+  }
+  .startingCountDown {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    .count {
+      font-size: 40vw;
+      color: #fff;
+      text-shadow: 0.3vw 0.5vw 1vw rgba(0, 0, 0);
+    }
+  }
+}
+
+/* for tablet view */
+@media all and (min-width: 480px) {
+  .GamePage {
+    padding: 0 0;
+    .header {
+      padding: 0 11vw;
+      gap: 1vw;
+    }
+    .startingCountDown {
+      .count {
+        font-size: 30vw;
+        text-shadow: 0.2vw 0.4vw 0.8vw rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
+
+/* laptop view */
+@media all and (min-width: 991px) {
+  .GamePage {
+    padding: 2vw;
+    background: none;
+    gap: 1vw;
+    .logoContainer {
+      width: 8vw;
+    }
+    .header {
+      padding: 0 37.5vw;
+      gap: 0.5vw;
+    }
+
+    .link {
+      margin-top: 1vw;
+      text-decoration: underline !important;
+    }
+    .startingCountDown {
+      .count {
+        font-size: 10vw;
+        text-shadow: 0.1vw 0.2vw 0.6vw rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}

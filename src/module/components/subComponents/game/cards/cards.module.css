@@ -1,0 +1,70 @@
+/* mobile view */
+.Cards {
+  gap: 3vw;
+  flex-wrap: wrap;
+  padding: 4vw;
+  .cardContainer {
+    .imgContainer {
+      cursor: pointer;
+      width: 20vw;
+      position: relative;
+      .cardFront {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(0deg);
+        transition: all ease-in 0.2s;
+        transition-delay: 0.2s;
+        border-radius: 1vw;
+      }
+      .cardBack {
+        transform: rotateY(90deg);
+        transition: all ease-in 0.2s;
+        border-radius: 1vw;
+      }
+    }
+    .flipped {
+      .cardFront {
+        transform: rotateY(90deg);
+        transition-delay: 0s;
+      }
+      .cardBack {
+        transform: rotateY(0deg);
+        transition-delay: 0.2s;
+      }
+    }
+  }
+}
+
+/* tablet view */
+@media all and (min-width: 480px) {
+  .Cards {
+    gap: 2vw;
+    padding: 3vw;
+    .cardContainer {
+      .imgContainer {
+        width: 18vw;
+      }
+    }
+  }
+}
+
+/* laptop view */
+@media all and (min-width: 991px) {
+  .Cards {
+    width: 25vw;
+    gap: 0.5vw;
+    padding: 0;
+    .cardContainer {
+      .imgContainer {
+        width: 5vw;
+        .cardFront {
+          border-radius: 0.3vw;
+        }
+        .cardBack {
+          border-radius: 0.3vw;
+        }
+      }
+    }
+  }
+}

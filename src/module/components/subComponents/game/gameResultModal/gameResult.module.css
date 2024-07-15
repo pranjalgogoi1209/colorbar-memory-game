@@ -1,0 +1,176 @@
+/* mobile view */
+.GameResult {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  padding: 8vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  .mainContainer {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #bf830f, #faca6e, #c58407) border-box;
+    border: 0.12vw solid transparent;
+    border-radius: 1vw;
+    width: 100%;
+    background-color: #fff;
+    padding: 5vw;
+    border-radius: 2vw;
+    gap: 3vw;
+    .redirect {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .gameWonContainer {
+      gap: 3vw;
+      .congrats {
+        font-size: 7vw;
+        background: linear-gradient(to right, #bf830f, #faca6e, #c58407);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+      }
+    }
+
+    .gameLostContainer {
+      gap: 3vw;
+      width: 100%;
+      .score {
+        font-size: 6vw;
+      }
+      .line {
+        width: 90%;
+        background: linear-gradient(white, white) padding-box,
+          linear-gradient(to right, #bf830f, #faca6e, #c58407) border-box;
+        border: 0.12vw solid transparent;
+        border-radius: 2vw;
+      }
+      .playAgainContainer {
+        gap: 1vw;
+        .playAgain {
+          outline: none;
+          border: none;
+          width: 25vw;
+          padding: 1.4vw 2vw;
+          margin-top: 1vw;
+          font-size: 3vw;
+          border-radius: 1vw;
+          color: #fff;
+          background-color: var(--text-color);
+          font-family: "Montserrat", sans-serif;
+          cursor: pointer;
+          svg {
+            font-size: 3vw;
+            color: #f1f1f1 !important;
+
+            fill: #f1f1f1;
+          }
+        }
+        .disableBtn {
+          background-color: #ccc;
+        }
+      }
+    }
+
+    button {
+      gap: 1vw;
+      svg {
+        font-size: 1.2vw;
+      }
+    }
+  }
+}
+
+/* tablet view */
+@media all and (min-width: 480px) {
+  .GameResult {
+    .mainContainer {
+      width: 70vw;
+      border: 0.1vw solid transparent;
+      padding: 5vw 3vw;
+      border-radius: 1.5vw;
+      gap: 2vw;
+
+      .gameWonContainer {
+        gap: 2vw;
+        .congrats {
+          font-size: 5vw;
+        }
+      }
+
+      .gameLostContainer {
+        gap: 2vw;
+        width: 100%;
+        .score {
+          font-size: 5vw;
+        }
+        .line {
+          width: 90%;
+          border: 0.1vw solid transparent;
+          border-radius: 1.5vw;
+        }
+        .playAgainContainer {
+          gap: 0.8vw;
+          .playAgain {
+            width: 22vw;
+            padding: 1.2vw 1.8vw;
+            margin-top: 0.8vw;
+            font-size: 2.5vw;
+            border-radius: 0.8vw;
+            svg {
+              font-size: 2.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*   react-icons => "4.11.0" */
+/* laptop view */
+@media all and (min-width: 991px) {
+  .GameResult {
+    .mainContainer {
+      width: 25vw;
+      border: 0.08vw solid transparent;
+      padding: 2vw;
+      border-radius: 0.5vw;
+      gap: 2vw;
+
+      .gameWonContainer {
+        gap: 1vw;
+        .congrats {
+          font-size: 1.5vw;
+        }
+      }
+
+      .gameLostContainer {
+        gap: 1vw;
+        .score {
+          font-size: 1.5vw;
+        }
+        .line {
+          border: 0.08vw solid transparent;
+          border-radius: 1.5vw;
+        }
+        .playAgainContainer {
+          gap: 0.1vw;
+          .playAgain {
+            width: 9vw;
+            font-size: 0.9vw;
+            padding: 0.5vw 0;
+            margin-top: 0.8vw;
+            border-radius: 0.2vw;
+            svg {
+              font-size: 1.2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
